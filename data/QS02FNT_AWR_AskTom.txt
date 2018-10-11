@@ -3768,7 +3768,7 @@ Slot Time (Duration)    Count Event                             Count % Event
 
   
   
-          ADDM-Bericht für Task 'ADDM:1830072438_1_14329'
+          ADDM-Bericht fÃ¼r Task 'ADDM:1830072438_1_14329'
           -----------------------------------------------
  
 Analysezeitraum
@@ -3783,7 +3783,7 @@ Datenbank 'QS02FNT' mit DB-ID 1830072438.
 Datenbankversion 12.1.0.2.0.
 ADDM hat Instanz QS02FNT mit der Nummer 1 auf szhm2254 analysiert.
  
-Aktivität während des Analysezeitraums
+AktivitÃ¤t wÃ¤hrend des Analysezeitraums
 --------------------------------------
 Gesamte Datenbankzeit betrug 871 Sekunden.
 Die durchschnittliche Anzahl von aktiven Sessions betrug .96.
@@ -3791,7 +3791,7 @@ Die durchschnittliche Anzahl von aktiven Sessions betrug .96.
 Zusammenfassung der Ergebnisse
 ------------------------------
    Beschreibung         Aktive Sessions        Empfehlungen
-                        Prozent der Aktivität   
+                        Prozent der AktivitÃ¤t   
    -------------------  ---------------------  ------------
 1  SGA zu klein         .85 | 88.06            1
 2  Top SQL-Anweisungen  .72 | 74.74            5
@@ -3805,41 +3805,41 @@ Zusammenfassung der Ergebnisse
           ---------------------------
  
 Ergebnis 1: SGA zu klein
-Auswirkung ist .85 aktive Sessions, 88.06\% der Gesamtaktivität.
+Auswirkung ist .85 aktive Sessions, 88.06\% der GesamtaktivitÃ¤t.
 ----------------------------------------------------------------
-Die SGA hatte keine ausreichende Größe, sodass es zu zusätzlicher I/O oder zu 
+Die SGA hatte keine ausreichende GrÃ¶ÃŸe, sodass es zu zusÃ¤tzlicher I/O oder zu 
 Hard Parses kommt.
-Der Wert des Parameters "sga_target" war während des Analysezeitraums "4096 
+Der Wert des Parameters "sga_target" war wÃ¤hrend des Analysezeitraums "4096 
 M".
  
    Empfehlung 1: Datenbankkonfiguration
-   Geschätzter Vorteil beträgt .84 aktive Sessions, 86.91\% der 
-   Gesamtaktivität.
+   GeschÃ¤tzter Vorteil betrÃ¤gt .84 aktive Sessions, 86.91\% der 
+   GesamtaktivitÃ¤t.
    ---------------------------------------------------------------------------
    --
    Aktion
-      Vergrößern Sie die SGA, indem Sie den Parameter "sga_target" auf 4608 M 
+      VergrÃ¶ÃŸern Sie die SGA, indem Sie den Parameter "sga_target" auf 4608 M 
       festlegen.
  
-   Symptome, die zu dem Ergebnis geführt haben:
+   Symptome, die zu dem Ergebnis gefÃ¼hrt haben:
    --------------------------------------------
       Hard Parsing von SQL-Anweisungen hat wesentliche Datenbankzeit belegt.
-      Auswirkung ist .42 aktive Sessions, 44\% der Gesamtaktivität.
+      Auswirkung ist .42 aktive Sessions, 44\% der GesamtaktivitÃ¤t.
  
  
 Ergebnis 2: Top SQL-Anweisungen
-Auswirkung ist .72 aktive Sessions, 74.74\% der Gesamtaktivität.
+Auswirkung ist .72 aktive Sessions, 74.74\% der GesamtaktivitÃ¤t.
 ----------------------------------------------------------------
-SQL-Anweisungen, die beträchtliche Datenbankzeit belegen, wurden ermittelt. 
-Diese Anweisungen bieten eine gute Möglichkeit zur Performanceverbesserung.
+SQL-Anweisungen, die betrÃ¤chtliche Datenbankzeit belegen, wurden ermittelt. 
+Diese Anweisungen bieten eine gute MÃ¶glichkeit zur Performanceverbesserung.
  
    Empfehlung 1: SQL Tuning
-   Geschätzter Vorteil beträgt .2 aktive Sessions, 21.05\% der 
-   Gesamtaktivität.
+   GeschÃ¤tzter Vorteil betrÃ¤gt .2 aktive Sessions, 21.05\% der 
+   GesamtaktivitÃ¤t.
    ---------------------------------------------------------------------------
    -
    Aktion
-      Führen Sie SQL Tuning Advisor für die SELECT-Anweisung mit SQL_ID  
+      FÃ¼hren Sie SQL Tuning Advisor fÃ¼r die SELECT-Anweisung mit SQL_ID  
       "6uug3xyncz5ct" aus.
       Beziehungsobjekt
          SQL-Anweisung mit SQL_ID 6uug3xyncz5ct.
@@ -3862,23 +3862,23 @@ Diese Anweisungen bieten eine gute Möglichkeit zur Performanceverbesserung.
          SVICBA_REP_ACTIVE_COMP_PORT."FREE_PORTS",  
          SVICBA_REP_ACTIVE_COMP_PORT."USED_PORTS" order by 
          SVIDEV_OBJECT_SEARCH."ID" ASC  )
-   Begründung
+   BegrÃ¼ndung
       Die SQL-Anweisung hat 100% der Datenbankzeit mit CPU-, I/O- und Cluster 
       Waits verbracht. Dieser Teil der Datenbankzeit kann durch den SQL Tuning 
       Advisor verbessert werden.
-   Begründung
-      Die Datenbankzeit für diese SQL-Anweisung wurde folgendermaßen 
-      aufgeteilt: 100% für SQL-Ausführung, 0% für Parsing, 0% für 
-      PL/SQL-Ausführung und 0% für Java-Ausführung.
-   Begründung
-      SQL-Anweisung mit SQL_ID "6uug3xyncz5ct" wurde 1 mal ausgeführt und 
+   BegrÃ¼ndung
+      Die Datenbankzeit fÃ¼r diese SQL-Anweisung wurde folgendermaÃŸen 
+      aufgeteilt: 100% fÃ¼r SQL-AusfÃ¼hrung, 0% fÃ¼r Parsing, 0% fÃ¼r 
+      PL/SQL-AusfÃ¼hrung und 0% fÃ¼r Java-AusfÃ¼hrung.
+   BegrÃ¼ndung
+      SQL-Anweisung mit SQL_ID "6uug3xyncz5ct" wurde 1 mal ausgefÃ¼hrt und 
       hatte eine durchschnittliche abgelaufene Zeit von 204 Sekunden.
  
    Empfehlung 2: SQL Tuning
-   Geschätzter Vorteil beträgt .19 aktive Sessions, 20\% der Gesamtaktivität.
+   GeschÃ¤tzter Vorteil betrÃ¤gt .19 aktive Sessions, 20\% der GesamtaktivitÃ¤t.
    --------------------------------------------------------------------------
    Aktion
-      Führen Sie SQL Tuning Advisor für die SELECT-Anweisung mit SQL_ID  
+      FÃ¼hren Sie SQL Tuning Advisor fÃ¼r die SELECT-Anweisung mit SQL_ID  
       "9jsmqh5k9tr6w" aus.
       Beziehungsobjekt
          SQL-Anweisung mit SQL_ID 9jsmqh5k9tr6w.
@@ -3901,27 +3901,27 @@ Diese Anweisungen bieten eine gute Möglichkeit zur Performanceverbesserung.
          SVICBA_REP_ACTIVE_COMP_PORT."FREE_PORTS",  
          SVICBA_REP_ACTIVE_COMP_PORT."USED_PORTS" order by 
          SVIDEV_OBJECT_SEARCH."ID" ASC 
-   Begründung
+   BegrÃ¼ndung
       Die SQL-Anweisung hat 100% der Datenbankzeit mit CPU-, I/O- und Cluster 
       Waits verbracht. Dieser Teil der Datenbankzeit kann durch den SQL Tuning 
       Advisor verbessert werden.
-   Begründung
-      Die Datenbankzeit für diese SQL-Anweisung wurde folgendermaßen 
-      aufgeteilt: 100% für SQL-Ausführung, 0% für Parsing, 0% für 
-      PL/SQL-Ausführung und 0% für Java-Ausführung.
-   Begründung
-      SQL-Anweisung mit SQL_ID "9jsmqh5k9tr6w" wurde 1 mal ausgeführt und 
+   BegrÃ¼ndung
+      Die Datenbankzeit fÃ¼r diese SQL-Anweisung wurde folgendermaÃŸen 
+      aufgeteilt: 100% fÃ¼r SQL-AusfÃ¼hrung, 0% fÃ¼r Parsing, 0% fÃ¼r 
+      PL/SQL-AusfÃ¼hrung und 0% fÃ¼r Java-AusfÃ¼hrung.
+   BegrÃ¼ndung
+      SQL-Anweisung mit SQL_ID "9jsmqh5k9tr6w" wurde 1 mal ausgefÃ¼hrt und 
       hatte eine durchschnittliche abgelaufene Zeit von 202 Sekunden.
  
    Empfehlung 3: SQL Tuning
-   Geschätzter Vorteil beträgt .14 aktive Sessions, 14.74\% der 
-   Gesamtaktivität.
+   GeschÃ¤tzter Vorteil betrÃ¤gt .14 aktive Sessions, 14.74\% der 
+   GesamtaktivitÃ¤t.
    ---------------------------------------------------------------------------
    --
    Aktion
-      Prüfen Sie die SELECT-Anweisung mit SQL_ID "c3vz9vfpnsk09" auf mögliche 
-      Performanceverbesserungen. Sie können die hier angegebenen Informationen 
-      mit einem ASH-Bericht für diese SQL_ID ergänzen.
+      PrÃ¼fen Sie die SELECT-Anweisung mit SQL_ID "c3vz9vfpnsk09" auf mÃ¶gliche 
+      Performanceverbesserungen. Sie kÃ¶nnen die hier angegebenen Informationen 
+      mit einem ASH-Bericht fÃ¼r diese SQL_ID ergÃ¤nzen.
       Beziehungsobjekt
          SQL-Anweisung mit SQL_ID c3vz9vfpnsk09.
          select count(*) from ( select CVIOBJ_OIZ_SERVER_MODULE."ZONE_CLASS" 
@@ -3942,28 +3942,28 @@ Diese Anweisungen bieten eine gute Möglichkeit zur Performanceverbesserung.
          from CVIOBJ_OIZ_SERVER_MODULE CVIOBJ_OIZ_SERVER_MODULE/* WHERE */  
          where upper(CVIOBJ_OIZ_SERVER_MODULE."ZONE_CLASS") not like  
          upper(:"SYS_B_0") ESCAPE :"SYS_B_1"      )
-   Begründung
+   BegrÃ¼ndung
       Die SQL-Anweisung  hat nur 0% der Datenbankzeit mit CPU-, I/O- und 
       Cluster Waits verbracht. Deshalb ist SQL Tuning Advisor in diesem Fall 
-      nicht anwendbar. Prüfen Sie die Performancedaten für die SQL-Anweisung 
+      nicht anwendbar. PrÃ¼fen Sie die Performancedaten fÃ¼r die SQL-Anweisung 
       auf potenzielle Verbesserungen.
-   Begründung
-      Die Datenbankzeit für diese SQL-Anweisung wurde folgendermaßen 
-      aufgeteilt: 0% für SQL-Ausführung, 100% für Parsing, 0% für 
-      PL/SQL-Ausführung und 0% für Java-Ausführung.
-   Begründung
-      SQL-Anweisung mit SQL_ID "c3vz9vfpnsk09" wurde 1 mal ausgeführt und 
+   BegrÃ¼ndung
+      Die Datenbankzeit fÃ¼r diese SQL-Anweisung wurde folgendermaÃŸen 
+      aufgeteilt: 0% fÃ¼r SQL-AusfÃ¼hrung, 100% fÃ¼r Parsing, 0% fÃ¼r 
+      PL/SQL-AusfÃ¼hrung und 0% fÃ¼r Java-AusfÃ¼hrung.
+   BegrÃ¼ndung
+      SQL-Anweisung mit SQL_ID "c3vz9vfpnsk09" wurde 1 mal ausgefÃ¼hrt und 
       hatte eine durchschnittliche abgelaufene Zeit von 138 Sekunden.
  
    Empfehlung 4: SQL Tuning
-   Geschätzter Vorteil beträgt .13 aktive Sessions, 13.68\% der 
-   Gesamtaktivität.
+   GeschÃ¤tzter Vorteil betrÃ¤gt .13 aktive Sessions, 13.68\% der 
+   GesamtaktivitÃ¤t.
    ---------------------------------------------------------------------------
    --
    Aktion
-      Prüfen Sie die SELECT-Anweisung mit SQL_ID "60qt62f5rsdgp" auf mögliche 
-      Performanceverbesserungen. Sie können die hier angegebenen Informationen 
-      mit einem ASH-Bericht für diese SQL_ID ergänzen.
+      PrÃ¼fen Sie die SELECT-Anweisung mit SQL_ID "60qt62f5rsdgp" auf mÃ¶gliche 
+      Performanceverbesserungen. Sie kÃ¶nnen die hier angegebenen Informationen 
+      mit einem ASH-Bericht fÃ¼r diese SQL_ID ergÃ¤nzen.
       Beziehungsobjekt
          SQL-Anweisung mit SQL_ID 60qt62f5rsdgp.
          select CVIOBJ_OIZ_SERVER_MODULE."ZONE_CLASS" as "Zonentyp", 
@@ -3984,45 +3984,45 @@ Diese Anweisungen bieten eine gute Möglichkeit zur Performanceverbesserung.
          from CVIOBJ_OIZ_SERVER_MODULE CVIOBJ_OIZ_SERVER_MODULE/* WHERE */  
          where upper(CVIOBJ_OIZ_SERVER_MODULE."ZONE_CLASS") not like  
          upper(:"SYS_B_0") ESCAPE :"SYS_B_1"     
-   Begründung
+   BegrÃ¼ndung
       Die SQL-Anweisung  hat nur 0% der Datenbankzeit mit CPU-, I/O- und 
       Cluster Waits verbracht. Deshalb ist SQL Tuning Advisor in diesem Fall 
-      nicht anwendbar. Prüfen Sie die Performancedaten für die SQL-Anweisung 
+      nicht anwendbar. PrÃ¼fen Sie die Performancedaten fÃ¼r die SQL-Anweisung 
       auf potenzielle Verbesserungen.
-   Begründung
-      Die Datenbankzeit für diese SQL-Anweisung wurde folgendermaßen 
-      aufgeteilt: 0% für SQL-Ausführung, 100% für Parsing, 0% für 
-      PL/SQL-Ausführung und 0% für Java-Ausführung.
+   BegrÃ¼ndung
+      Die Datenbankzeit fÃ¼r diese SQL-Anweisung wurde folgendermaÃŸen 
+      aufgeteilt: 0% fÃ¼r SQL-AusfÃ¼hrung, 100% fÃ¼r Parsing, 0% fÃ¼r 
+      PL/SQL-AusfÃ¼hrung und 0% fÃ¼r Java-AusfÃ¼hrung.
  
    Empfehlung 5: SQL Tuning
-   Geschätzter Vorteil beträgt .05 aktive Sessions, 5.26\% der 
-   Gesamtaktivität.
+   GeschÃ¤tzter Vorteil betrÃ¤gt .05 aktive Sessions, 5.26\% der 
+   GesamtaktivitÃ¤t.
    ---------------------------------------------------------------------------
    -
    Aktion
-      Prüfen Sie die SELECT-Anweisung mit SQL_ID "6k2g7bqzdys9d" auf mögliche 
-      Performanceverbesserungen. Sie können die hier angegebenen Informationen 
-      mit einem ASH-Bericht für diese SQL_ID ergänzen.
+      PrÃ¼fen Sie die SELECT-Anweisung mit SQL_ID "6k2g7bqzdys9d" auf mÃ¶gliche 
+      Performanceverbesserungen. Sie kÃ¶nnen die hier angegebenen Informationen 
+      mit einem ASH-Bericht fÃ¼r diese SQL_ID ergÃ¤nzen.
       Beziehungsobjekt
          SQL-Anweisung mit SQL_ID 6k2g7bqzdys9d.
          select * from cvidev_object_search where ZONE_CLASS != :"SYS_B_0" 
          order by :"SYS_B_1"
-   Begründung
+   BegrÃ¼ndung
       Die SQL-Anweisung  hat nur 0% der Datenbankzeit mit CPU-, I/O- und 
       Cluster Waits verbracht. Deshalb ist SQL Tuning Advisor in diesem Fall 
-      nicht anwendbar. Prüfen Sie die Performancedaten für die SQL-Anweisung 
+      nicht anwendbar. PrÃ¼fen Sie die Performancedaten fÃ¼r die SQL-Anweisung 
       auf potenzielle Verbesserungen.
-   Begründung
-      Die Datenbankzeit für diese SQL-Anweisung wurde folgendermaßen 
-      aufgeteilt: 0% für SQL-Ausführung, 100% für Parsing, 0% für 
-      PL/SQL-Ausführung und 0% für Java-Ausführung.
+   BegrÃ¼ndung
+      Die Datenbankzeit fÃ¼r diese SQL-Anweisung wurde folgendermaÃŸen 
+      aufgeteilt: 0% fÃ¼r SQL-AusfÃ¼hrung, 100% fÃ¼r Parsing, 0% fÃ¼r 
+      PL/SQL-AusfÃ¼hrung und 0% fÃ¼r Java-AusfÃ¼hrung.
  
  
  
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  
-          Zusätzliche Informationen
+          ZusÃ¤tzliche Informationen
           -------------------------
  
 Verschiedene Informationen
@@ -4031,7 +4031,7 @@ Wait-Klasse "Application" hat keine wesentliche Datenbankzeit belegt.
 Wait-Klasse "Commit" hat keine wesentliche Datenbankzeit belegt.
 Wait-Klasse "Concurrency" hat keine wesentliche Datenbankzeit belegt.
 Wait-Klasse "Configuration" hat keine wesentliche Datenbankzeit belegt.
-CPU war kein Engpass für die Instanz.
+CPU war kein Engpass fÃ¼r die Instanz.
 Wait-Klasse "Network" hat keine wesentliche Datenbankzeit belegt.
 Wait-Klasse "User I/O" hat keine wesentliche Datenbankzeit belegt.
 Aufrufe zur Session-Anmeldung und -Abmeldung haben keine wesentliche 
@@ -4039,7 +4039,7 @@ Datenbankzeit belegt.
  
   
   
-          ADDM-Bericht für Task 'ADDM:1830072438_1_14328'
+          ADDM-Bericht fÃ¼r Task 'ADDM:1830072438_1_14328'
           -----------------------------------------------
  
 Analysezeitraum
@@ -4054,7 +4054,7 @@ Datenbank 'QS02FNT' mit DB-ID 1830072438.
 Datenbankversion 12.1.0.2.0.
 ADDM hat Instanz QS02FNT mit der Nummer 1 auf szhm2254 analysiert.
  
-Aktivität während des Analysezeitraums
+AktivitÃ¤t wÃ¤hrend des Analysezeitraums
 --------------------------------------
 Gesamte Datenbankzeit betrug 354 Sekunden.
 Die durchschnittliche Anzahl von aktiven Sessions betrug .42.
@@ -4062,7 +4062,7 @@ Die durchschnittliche Anzahl von aktiven Sessions betrug .42.
 Zusammenfassung der Ergebnisse
 ------------------------------
    Beschreibung         Aktive Sessions        Empfehlungen
-                        Prozent der Aktivität   
+                        Prozent der AktivitÃ¤t   
    -------------------  ---------------------  ------------
 1  SGA zu klein         .39 | 94.02            1
 2  Top SQL-Anweisungen  .38 | 90.91            2
@@ -4077,41 +4077,41 @@ Zusammenfassung der Ergebnisse
           ---------------------------
  
 Ergebnis 1: SGA zu klein
-Auswirkung ist .39 aktive Sessions, 94.02\% der Gesamtaktivität.
+Auswirkung ist .39 aktive Sessions, 94.02\% der GesamtaktivitÃ¤t.
 ----------------------------------------------------------------
-Die SGA hatte keine ausreichende Größe, sodass es zu zusätzlicher I/O oder zu 
+Die SGA hatte keine ausreichende GrÃ¶ÃŸe, sodass es zu zusÃ¤tzlicher I/O oder zu 
 Hard Parses kommt.
-Der Wert des Parameters "sga_target" war während des Analysezeitraums "4096 
+Der Wert des Parameters "sga_target" war wÃ¤hrend des Analysezeitraums "4096 
 M".
  
    Empfehlung 1: Datenbankkonfiguration
-   Geschätzter Vorteil beträgt .39 aktive Sessions, 94.02\% der 
-   Gesamtaktivität.
+   GeschÃ¤tzter Vorteil betrÃ¤gt .39 aktive Sessions, 94.02\% der 
+   GesamtaktivitÃ¤t.
    ---------------------------------------------------------------------------
    --
    Aktion
-      Vergrößern Sie die SGA, indem Sie den Parameter "sga_target" auf 4608 M 
+      VergrÃ¶ÃŸern Sie die SGA, indem Sie den Parameter "sga_target" auf 4608 M 
       festlegen.
  
-   Symptome, die zu dem Ergebnis geführt haben:
+   Symptome, die zu dem Ergebnis gefÃ¼hrt haben:
    --------------------------------------------
       Hard Parsing von SQL-Anweisungen hat wesentliche Datenbankzeit belegt.
-      Auswirkung ist .08 aktive Sessions, 18.72\% der Gesamtaktivität.
+      Auswirkung ist .08 aktive Sessions, 18.72\% der GesamtaktivitÃ¤t.
  
  
 Ergebnis 2: Top SQL-Anweisungen
-Auswirkung ist .38 aktive Sessions, 90.91\% der Gesamtaktivität.
+Auswirkung ist .38 aktive Sessions, 90.91\% der GesamtaktivitÃ¤t.
 ----------------------------------------------------------------
-SQL-Anweisungen, die beträchtliche Datenbankzeit belegen, wurden ermittelt. 
-Diese Anweisungen bieten eine gute Möglichkeit zur Performanceverbesserung.
+SQL-Anweisungen, die betrÃ¤chtliche Datenbankzeit belegen, wurden ermittelt. 
+Diese Anweisungen bieten eine gute MÃ¶glichkeit zur Performanceverbesserung.
  
    Empfehlung 1: SQL Tuning
-   Geschätzter Vorteil beträgt .28 aktive Sessions, 66.67\% der 
-   Gesamtaktivität.
+   GeschÃ¤tzter Vorteil betrÃ¤gt .28 aktive Sessions, 66.67\% der 
+   GesamtaktivitÃ¤t.
    ---------------------------------------------------------------------------
    --
    Aktion
-      Führen Sie SQL Tuning Advisor für die SELECT-Anweisung mit SQL_ID  
+      FÃ¼hren Sie SQL Tuning Advisor fÃ¼r die SELECT-Anweisung mit SQL_ID  
       "6uug3xyncz5ct" aus.
       Beziehungsobjekt
          SQL-Anweisung mit SQL_ID 6uug3xyncz5ct.
@@ -4134,28 +4134,28 @@ Diese Anweisungen bieten eine gute Möglichkeit zur Performanceverbesserung.
          SVICBA_REP_ACTIVE_COMP_PORT."FREE_PORTS",  
          SVICBA_REP_ACTIVE_COMP_PORT."USED_PORTS" order by 
          SVIDEV_OBJECT_SEARCH."ID" ASC  )
-   Begründung
+   BegrÃ¼ndung
       Die SQL-Anweisung hat 88% der Datenbankzeit mit CPU-, I/O- und Cluster 
       Waits verbracht. Dieser Teil der Datenbankzeit kann durch den SQL Tuning 
       Advisor verbessert werden.
-   Begründung
-      Die Datenbankzeit für diese SQL-Anweisung wurde folgendermaßen 
-      aufgeteilt: 88% für SQL-Ausführung, 12% für Parsing, 0% für 
-      PL/SQL-Ausführung und 0% für Java-Ausführung.
-   Begründung
-      SQL-Anweisung mit SQL_ID "6uug3xyncz5ct" wurde 1 mal ausgeführt und 
+   BegrÃ¼ndung
+      Die Datenbankzeit fÃ¼r diese SQL-Anweisung wurde folgendermaÃŸen 
+      aufgeteilt: 88% fÃ¼r SQL-AusfÃ¼hrung, 12% fÃ¼r Parsing, 0% fÃ¼r 
+      PL/SQL-AusfÃ¼hrung und 0% fÃ¼r Java-AusfÃ¼hrung.
+   BegrÃ¼ndung
+      SQL-Anweisung mit SQL_ID "6uug3xyncz5ct" wurde 1 mal ausgefÃ¼hrt und 
       hatte eine durchschnittliche abgelaufene Zeit von 258 Sekunden.
  
    Empfehlung 2: SQL Tuning
-   Geschätzter Vorteil beträgt .06 aktive Sessions, 15.15\% der 
-   Gesamtaktivität.
+   GeschÃ¤tzter Vorteil betrÃ¤gt .06 aktive Sessions, 15.15\% der 
+   GesamtaktivitÃ¤t.
    ---------------------------------------------------------------------------
    --
    Aktion
-      Führen Sie SQL Tuning Advisor für die SELECT-Anweisung mit SQL_ID 
-      "9jsmqh5k9tr6w" aus. Außerdem prüfen Sie die Anweisung auf mögliche 
-      Performanceverbesserungen. Sie können die hier angegebenen Informationen 
-      durch einen ASH-Bericht für diese SQL_ID ergänzen.
+      FÃ¼hren Sie SQL Tuning Advisor fÃ¼r die SELECT-Anweisung mit SQL_ID 
+      "9jsmqh5k9tr6w" aus. AuÃŸerdem prÃ¼fen Sie die Anweisung auf mÃ¶gliche 
+      Performanceverbesserungen. Sie kÃ¶nnen die hier angegebenen Informationen 
+      durch einen ASH-Bericht fÃ¼r diese SQL_ID ergÃ¤nzen.
       Beziehungsobjekt
          SQL-Anweisung mit SQL_ID 9jsmqh5k9tr6w.
          select SVIDEV_OBJECT_SEARCH."CAMPUS" as "Adresse",  
@@ -4177,33 +4177,33 @@ Diese Anweisungen bieten eine gute Möglichkeit zur Performanceverbesserung.
          SVICBA_REP_ACTIVE_COMP_PORT."FREE_PORTS",  
          SVICBA_REP_ACTIVE_COMP_PORT."USED_PORTS" order by 
          SVIDEV_OBJECT_SEARCH."ID" ASC 
-   Begründung
+   BegrÃ¼ndung
       Die SQL-Anweisung hat 40% der Datenbankzeit mit CPU-, I/O- und Cluster 
       Waits verbracht. Dieser Teil der Datenbankzeit kann mit SQL Tuning 
-      Advisor verbessert werden. Prüfen Sie die unten angegebenen Daten und 
+      Advisor verbessert werden. PrÃ¼fen Sie die unten angegebenen Daten und 
       einen ASH-Bericht auf weitere Performanceverbesserungen.
-   Begründung
-      Die Datenbankzeit für diese SQL-Anweisung wurde folgendermaßen 
-      aufgeteilt: 40% für SQL-Ausführung, 60% für Parsing, 0% für 
-      PL/SQL-Ausführung und 0% für Java-Ausführung.
-   Begründung
-      SQL-Anweisung mit SQL_ID "9jsmqh5k9tr6w" wurde 1 mal ausgeführt und 
+   BegrÃ¼ndung
+      Die Datenbankzeit fÃ¼r diese SQL-Anweisung wurde folgendermaÃŸen 
+      aufgeteilt: 40% fÃ¼r SQL-AusfÃ¼hrung, 60% fÃ¼r Parsing, 0% fÃ¼r 
+      PL/SQL-AusfÃ¼hrung und 0% fÃ¼r Java-AusfÃ¼hrung.
+   BegrÃ¼ndung
+      SQL-Anweisung mit SQL_ID "9jsmqh5k9tr6w" wurde 1 mal ausgefÃ¼hrt und 
       hatte eine durchschnittliche abgelaufene Zeit von 75 Sekunden.
  
  
 Ergebnis 3: PL/SQL-Kompilierung
-Auswirkung ist .04 aktive Sessions, 8.61\% der Gesamtaktivität.
+Auswirkung ist .04 aktive Sessions, 8.61\% der GesamtaktivitÃ¤t.
 ---------------------------------------------------------------
 PL/SQL-Kompilierung hat wesentliche Datenbankzeit belegt.
  
    Empfehlung 1: Anwendungsanalyse
-   Geschätzter Vorteil beträgt .04 aktive Sessions, 8.61\% der 
-   Gesamtaktivität.
+   GeschÃ¤tzter Vorteil betrÃ¤gt .04 aktive Sessions, 8.61\% der 
+   GesamtaktivitÃ¤t.
    ---------------------------------------------------------------------------
    -
    Aktion
-      Überprüfen Sie, ob die PL/SQL-Kompilierung adäquat war. Die 
-      PL/SQL-Kompilierung kann durch DDL auf abhängigen Objekten verursacht 
+      ÃœberprÃ¼fen Sie, ob die PL/SQL-Kompilierung adÃ¤quat war. Die 
+      PL/SQL-Kompilierung kann durch DDL auf abhÃ¤ngigen Objekten verursacht 
       werden. 
  
  
@@ -4211,7 +4211,7 @@ PL/SQL-Kompilierung hat wesentliche Datenbankzeit belegt.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  
-          Zusätzliche Informationen
+          ZusÃ¤tzliche Informationen
           -------------------------
  
 Verschiedene Informationen
@@ -4220,7 +4220,7 @@ Wait-Klasse "Application" hat keine wesentliche Datenbankzeit belegt.
 Wait-Klasse "Commit" hat keine wesentliche Datenbankzeit belegt.
 Wait-Klasse "Concurrency" hat keine wesentliche Datenbankzeit belegt.
 Wait-Klasse "Configuration" hat keine wesentliche Datenbankzeit belegt.
-CPU war kein Engpass für die Instanz.
+CPU war kein Engpass fÃ¼r die Instanz.
 Wait-Klasse "Network" hat keine wesentliche Datenbankzeit belegt.
 Wait-Klasse "User I/O" hat keine wesentliche Datenbankzeit belegt.
 Aufrufe zur Session-Anmeldung und -Abmeldung haben keine wesentliche 
@@ -4228,7 +4228,7 @@ Datenbankzeit belegt.
  
   
   
-          ADDM-Bericht für Task 'ADDM:1830072438_1_14330'
+          ADDM-Bericht fÃ¼r Task 'ADDM:1830072438_1_14330'
           -----------------------------------------------
  
 Analysezeitraum
@@ -4243,7 +4243,7 @@ Datenbank 'QS02FNT' mit DB-ID 1830072438.
 Datenbankversion 12.1.0.2.0.
 ADDM hat Instanz QS02FNT mit der Nummer 1 auf szhm2254 analysiert.
  
-Aktivität während des Analysezeitraums
+AktivitÃ¤t wÃ¤hrend des Analysezeitraums
 --------------------------------------
 Gesamte Datenbankzeit betrug 223 Sekunden.
 Die durchschnittliche Anzahl von aktiven Sessions betrug .25.
@@ -4252,16 +4252,16 @@ Die durchschnittliche Anzahl von aktiven Sessions betrug .25.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  
-Keine Ergebnisse für Bericht vorhanden.
+Keine Ergebnisse fÃ¼r Bericht vorhanden.
  
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  
-          Zusätzliche Informationen
+          ZusÃ¤tzliche Informationen
           -------------------------
  
 Verschiedene Informationen
 --------------------------
-Es war nicht genügend Datenbankaktivität zur Ausführung von ADDM vorhanden.
+Es war nicht genÃ¼gend DatenbankaktivitÃ¤t zur AusfÃ¼hrung von ADDM vorhanden.
  
 End of Report
