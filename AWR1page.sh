@@ -14,9 +14,8 @@ BEGIN {
 }
 {
 # data prep for funny files
-gsub(/
-/,"",$0) # remove Windows ctl-M chars
-gsub(//,"",$0) # remove Windows ctl-L chars
+gsub(/\r/,"",$0) # remove Windows ctl-M chars
+gsub(//,"",$0) # remove Windows ctl-L chars
 }
 ####################################################
 # Main program: 
@@ -570,8 +569,7 @@ function report( tmd_exists \
 # special getline that removes ctl-M (Windows)
 function getlineM(x) {
   getline;
-  x = gsub(/
-/,"",$0)
+  x = gsub(/\r/,"",$0)
 }
 # abort with message
 function abort(msg) {
