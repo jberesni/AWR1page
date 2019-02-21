@@ -15,7 +15,7 @@ BEGIN {
 {
 # data prep for funny files
 gsub(/\r/,"",$0) # remove Windows ctl-M chars
-gsub(//,"",$0) # remove Windows ctl-L chars
+#gsub(//,"",$0) # remove Windows ctl-L chars
 }
 ####################################################
 # Main program: 
