@@ -99,11 +99,11 @@ function timemodel(got, tmkey, tmval) {
   while ($0 !~ "^Statistic Name") {getlineM()} # skip to table head
   getlineM();getlineM()
   while (NF > 1) {
-    got = match($0,"^[a-zA-Z /()]+")
+    got = match($0,"^[a-zA-Z /\\(\\)]+")
     if (got > 0) {
       tmkey = substr($0,RSTART,RLENGTH)  # key string
       gsub(/[ \t]+$/,"",tmkey)       # trim trailing whitespace     
-      got = match($0,"[0-9.,]+")     # find first numeric - time in secs
+      got = match($0,"[0-9\\.,]+")     # find first numeric - time in secs
       if (got > 0) {
         tmval = substr($0,RSTART,RLENGTH)
         TIMEMODEL[tmkey] = tmval
@@ -151,12 +151,12 @@ function waitclass(got, wkey, chunk, t_beg, wval, tot) {
   tot = 0                              # initialize
   while (NF > 1) {
     if ($0 ~ "^DB CPU") {getlineM()}      # skip, in time model data
-    got = match($0,"^[A-Za-z \/]+")
+    got = match($0,"^[A-Za-z /]+")
     if (got > 0) {
       wkey = substr($0,RSTART,RLENGTH) # key
       gsub(/[ \t]+$/,"",wkey)       # trim trailing whitespace     
       chunk = substr($0, t_beg,15)   # get substring time value
-      got = match(chunk,"[0-9\.,]+")
+      got = match(chunk,"[0-9\\.,]+")
       if (got > 0) {wval = substr(chunk,RSTART,RLENGTH); gsub(/,/,"",wval)} # de-comma
         else {abort("waitclass:2")}
       WAITCLASS[wkey] = wval
@@ -184,7 +184,7 @@ function ashtime(got,slotC_b,slotC_e,event_b,event_e,totsecs,slotcount,eventcoun
     got = match($0,"\\([0-9\\.]+ min\\)")      # find slot durations in min
     if (got > 0) {
       chunk = substr($0,RSTART,RLENGTH)     # slot duration text chunk
-      got = match(chunk,"[0-9\.,]+")         # find the time (min)
+      got = match(chunk,"[0-9\\.,]+")         # find the time (min)
         if (got > 0) {
           mins = substr(chunk,RSTART,RLENGTH); gsub(/,/,"",mins) # de-comma
           totsecs += mins*60
