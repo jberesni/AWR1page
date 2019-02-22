@@ -124,12 +124,12 @@ function fgwaitclass(got, fwkey, chunk, t_beg, fwval, tot) {
   tot = 0                              # initialize
   while (NF > 1) {
     if ($0 ~ "^DB CPU") {getlineM()}      # skip, in time model data
-    got = match($0,"^[A-Za-z \/]+")
+    got = match($0,"^[A-Za-z /]+")
     if (got > 0) {
       fwkey = substr($0,RSTART,RLENGTH) # key
       gsub(/[ \t]+$/,"",fwkey)       # trim trailing whitespace     
       chunk = substr($0, t_beg,15)   # get substring time value
-      got = match(chunk,"[0-9\.,]+")
+      got = match(chunk,"[0-9\\.,]+")
       if (got > 0) {fwval = substr(chunk,RSTART,RLENGTH); gsub(/,/,"",fwval)} # de-comma
         else {abort("fgwaitclass:2")}
       FGWAITCLASS[fwkey] = fwval
@@ -181,7 +181,7 @@ function ashtime(got,slotC_b,slotC_e,event_b,event_e,totsecs,slotcount,eventcoun
   getlineM();getlineM()                           # move to first row in table
   totsecs = 0; slotcount = 0; eventcount = 0
   while (NF > 1) {
-    got = match($0,"\([0-9\.]+ min\)")      # find slot durations in min
+    got = match($0,"\\([0-9\\.]+ min\\)")      # find slot durations in min
     if (got > 0) {
       chunk = substr($0,RSTART,RLENGTH)     # slot duration text chunk
       got = match(chunk,"[0-9\.,]+")         # find the time (min)
@@ -200,7 +200,7 @@ function ashtime(got,slotC_b,slotC_e,event_b,event_e,totsecs,slotcount,eventcoun
     }
     # event name
     chunk = substr($0,event_b,event_e)
-    got = match(chunk,"[A-Za-z \(\)\+\-]+")  # find event name
+    got = match(chunk,"[A-Za-z \\(\\)\\+-]+")  # find event name
     if (got > 0) {
       ashkey = substr(chunk,RSTART,RLENGTH) # get event name
       gsub(/[ \t]+$/,"",ashkey)       # trim trailing whitespace
